@@ -40,9 +40,9 @@
     "AUTHORIZATION_HEADER": "{{configuration.authorization_header}}"
   },
   "labels": {
-    {{#service.labels}}
-        "{{service.labels.name}}": "{{service.labels.value}}",
-    {{/service.labels}}
+    {{#marathon.labels}}
+        "{{name}}": "{{value}}",
+    {{/marathon.labels}}
     "AGENT_FILL": "true"
   },
   "container": {
